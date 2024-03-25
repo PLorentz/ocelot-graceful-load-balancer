@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>library</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageId>Ocelot.GracefulLoadBalancer</PackageId>
@@ -26,7 +26,7 @@
     <PackageReleaseNotes>In alpha stage but should be usable, please check project page for current status.</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Ocelot" Version="16.0.1" />
+    <PackageReference Include="Ocelot" Version="23.1.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\LICENSE">

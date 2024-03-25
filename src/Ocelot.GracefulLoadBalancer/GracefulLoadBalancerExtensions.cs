@@ -23,7 +23,7 @@ namespace Ocelot.DependencyInjection
             Func<IServiceProvider, DownstreamRoute, IServiceDiscoveryProvider, GracefulLoadBalancer> loadBalancerFactoryFunc
                 = (serviceProvider, route, serviceDiscoveryProvider) =>
                 {
-                    return new GracefulLoadBalancer(serviceProvider, route, serviceDiscoveryProvider.Get);
+                    return new GracefulLoadBalancer(serviceProvider, route, serviceDiscoveryProvider.GetAsync);
                 };
 
             builder.AddCustomLoadBalancer(loadBalancerFactoryFunc);
